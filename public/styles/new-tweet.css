@@ -1,0 +1,39 @@
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  font-family: Bungee, sans-serif;
+}
+
+.tweet-button {
+  background-color: #4056a1;
+  color: white;
+}
+
+#tweet-text {
+  border: transparent;
+  background-color: #40a18b;
+}
+
+.tweet-area {
+  display: flex;
+  width: 750px;
+  flex-direction: column;
+  border-bottom: 0.2rem solid;
+  font-family: Source Sans Pro, sans-serif;
+
+}
+
+.limit-exceeded {
+  color: red;
+}
+
+

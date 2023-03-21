@@ -1,0 +1,21 @@
+.header-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 130px;
+  height: 530px;
+  background-color: #a18b40;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */}
+
+.header-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-username {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

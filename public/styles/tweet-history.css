@@ -1,0 +1,40 @@
+.tweet-container {
+  font-family: Source Sans Pro, sans-serif;
+  border: 0.2rem solid;
+  width: 750px;
+}
+
+.tweet-container:hover {
+  box-shadow: 10px 5px 5px gray;
+}
+
+.icons:hover {
+  color:pink;
+}
+
+.tweet-header {
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet-body {
+  font-size: 18px;
+  padding: 10px;
+  margin-right: 10%;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.tweet-footer {
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 90%;
+  align-items: center;
+  border-top: 0.2rem solid;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+}

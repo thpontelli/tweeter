@@ -1,11 +1,6 @@
 .tweet-container {
   font-family: Source Sans Pro, sans-serif;
-  border: 0.2rem solid;
   width: 750px;
-}
-
-.tweet-container:hover {
-  box-shadow: 10px 5px 5px gray;
 }
 
 .icons:hover {
@@ -37,4 +32,12 @@
   font-size: small;
   display: flex;
   justify-content: space-between;
+}
+
+.tweet-article {
+  border: 0.2rem solid;
+}
+
+.tweet-article:hover {
+  box-shadow: 10px 5px 5px gray;
 }

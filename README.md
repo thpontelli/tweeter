@@ -12,17 +12,17 @@ The technologies used are the following:
 - AJAX
 
 ## Final Product
-![Tweeter Initial Page](docs/tweeter_initial_page.png)
+!["Tweeter Initial Page"](docs/tweeter_initial_page.png)
 
-![Empty Tweet Error Message](docs/empty_tweet_error.png)
+!["Empty Tweet Error Message"](docs/empty_tweet_error.png)
 
-![Too Long Tweet Error Message](docs/too_long_tweet_error.png)
+!["Too Long Tweet Error Message"](docs/too_long_tweet_error.png)
 
-![Posting a Tweet](docs/posting_a_tweet.png)
+!["Posting a Tweet"](docs/posting_a_tweet.png)
 
-![Tweeter Responsive Initial Page](docs/tweeter_responsive_initial_page.png)
+!["Tweeter Responsive Initial Page"](docs/tweeter_responsive_initial_page.png)
 
-![Tweeter Responsive Page](docs/tweets_responsive_page.png)
+!["Tweeter Responsive Page"](docs/tweets_responsive_page.png)
 
 
 ## Getting Started

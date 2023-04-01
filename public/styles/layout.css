@@ -29,9 +29,14 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 .body-area {
-  background-color: #40a18b;
+  background-color: #ACAD94;
 }
 
+.header_main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
 
  .container {
   display: flex;
@@ -41,5 +46,12 @@ body {
   width: 90%;
   justify-content: center;
   align-items: center;
-  background-color: #40a18b;
+  background-color: #ACAD94;
  }
+
+
+ @media only screen and (min-width: 1024px) {
+  .header_main {
+    flex-direction: row;
+  }
+}

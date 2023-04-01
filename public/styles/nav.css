@@ -9,9 +9,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 120px;
+  height: 100px;
   width: 100%;
-  background-color: #4056a1;
+  background-color: #a18b40;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
   color: #FFFFFF;
   font-family: Source Sans Pro, sans-serif;
   padding: 1.5em;
@@ -25,3 +26,10 @@
   margin: 1.5em;
 }
 
+@media only screen and (min-width: 1024px) {
+  .nav-area {
+    background-color: #4056a1;
+    background-image: none;
+  }
+
+}

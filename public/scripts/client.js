@@ -6,31 +6,14 @@
 
 $(document).ready(function() {
 
-  // const data = [
-  //   {
-  //     "user": {
-  //       "name": "Newton",
-  //       "avatars": "https://i.imgur.com/73hZDYK.png",
-  //       "handle": "@SirIsaac"
-  //     },
-  //     "content": {
-  //       "text": "If I have seen further it is by standing on the shoulders of giants"
-  //     },
-  //     "created_at": 1679687034042
-  //   },
-  //   {
-  //     "user": {
-  //       "name": "Descartes",
-  //       "avatars": "https://i.imgur.com/nlhLi3I.png",
-  //       "handle": "@rd"
-  //     },
-  //     "content": {
-  //       "text": "Je pense , donc je suis"
-  //     },
-  //     "created_at": 1679773434042
-  //   }
-  // ]
+  $(".error").hide();
 
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+ 
   const daysAgo = function(date) {
     const now = Math.floor(new Date().getTime())
     return Math.round((now - date) / (24 * 3600));
@@ -58,7 +41,7 @@ $(document).ready(function() {
     </div>
     </header>
     <div class="tweet-body">
-    <p>${tweetObject.content.text}</p>
+    <p>${escape(tweetObject.content.text)}</p>
     </div>
     <footer class="tweet-footer">
     <p>${daysPosted} days ago</p>
@@ -81,18 +64,22 @@ $(document).ready(function() {
     })
     .then((res) => {
       
-
       renderTweets(res);
+      
     })
   }
   $('form').on("submit", (event) => {
     event.preventDefault();
-    const data = $("form").serialize()
+    const data = $("form").serialize();
     const $text = $("#tweet-text").val();
     if ($text.length > 140) {
-      alert("Please, keep short, there is a limit of 140 characters")
+      $(".error").text("Please, keep short, there is a limit of 140 characters");
+      $(".error").slideDown("slow").delay(1500).slideUp("slow");
+      //alert("Please, keep short, there is a limit of 140 characters")
     }else if (!$text){
-      alert("If you want to Tweet, you need to write something!")
+      $(".error").text("If you want to Tweet, you need to write something!");
+      $(".error").slideDown("slow").delay(1500).slideUp("slow");
+      //alert("If you want to Tweet, you need to write something!")
     } else {
       $.ajax({
         url: "/tweets",
@@ -100,9 +87,9 @@ $(document).ready(function() {
         data
       })
      .then(() => {
-      loadTweet()
-     })
-  
+       loadTweet()
+      })
+      
       $("#form-id").trigger("reset");
     }
   })

@@ -6,7 +6,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -38,7 +41,7 @@ body {
   flex-direction: column;
 }
 
- .container {
+.container {
   display: flex;
   flex-direction: column;
   margin-right: 5%;
@@ -47,10 +50,10 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #ACAD94;
- }
+}
 
 
- @media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .header_main {
     flex-direction: row;
   }
